@@ -674,9 +674,17 @@ padding: 60px 0 60px;
 .footer-button {
     height: 50px;
 }
-.btn-footer-thumb svg {
+/* .btn-footer-thumb svg {
     position: absolute;
     top: 13px;
     right: 28px;
     fill: var(--pure-white-color);
+} */
+.footer-btn-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: var(--pure-white-color);
+    width: 24px;
+    height: 24px;
 }
