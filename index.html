@@ -395,9 +395,20 @@
             <div class="modal">
                 <button type="button" aria-label="закрити вікно" class="close" data-modal-close>
                     <svg>
-                        <use href="./images//symbol-defs.svg#close-black" width="11" height="11"></use>
+                        <use href="./images//symbol-defs.svg#close-black" width="18" height="18"></use>
                     </svg>
                 </button>
+                <p class="modal-text-invite">Залиште свої дані, ми вам передзвонимо</p>
+                <form action="" class="modal-form">
+                    <label for="nick">Ім'я</label>
+                    <input name="nick" type="name" placeholder="" />
+                    <label for="tel">Телефон</label>
+                    <input name="tel" type="tel" placeholder="" />
+                    <label for="mail">Пошта</label>
+                    <input name="mail" type="email" placeholder="" />
+                    <label for="commentary">Коментар</label>
+                    <textarea name="commentary" type="text" placeholder=""></textarea>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
