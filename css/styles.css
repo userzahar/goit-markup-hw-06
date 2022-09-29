@@ -730,11 +730,11 @@ padding: 60px 0 60px;
     padding: 15px 16px 15px 42px;
 }
 /* .modal-input-thumb:focus, */
-.modal-input-thumb>input:focus,
+.modal-input-thumb>input:focus-within,
 .modal-input-thumb>input:not(:placeholder-shown) {
     border-color: var(--accent-color);
 }
-.modal-input-thumb>input:focus + svg,
+.modal-input-thumb>input:focus-within + svg,
 .modal-input-thumb>input:not(:placeholder-shown) + svg {
     fill: var(--accent-color);
 }
