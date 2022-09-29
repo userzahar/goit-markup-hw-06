@@ -401,18 +401,33 @@
                 <p class="modal-text-invite">Залиште свої дані, ми вам передзвонимо</p>
                 <form action="" class="modal-form">
                     <label for="nick">Ім'я</label>
-                    <input name="nick" type="name" placeholder="" />
+                    <div class="modal-input-thumb">
+                        <input name="nick" id="nick" type="text" placeholder=" " />
+                        <svg width="18">
+                            <use href="./images/symbol-defs.svg#person-form"></use>
+                        </svg>
+                    </div>
                     <label for="tel">Телефон</label>
-                    <input name="tel" type="tel" placeholder="" />
+                    <div class="modal-input-thumb">
+                        <input name="tel" id="tel" type="tel" placeholder=" " />
+                        <svg width="18">
+                            <use href="./images/symbol-defs.svg#phone-form"></use>
+                        </svg>
+                    </div>    
                     <label for="mail">Пошта</label>
-                    <input name="mail" type="email" placeholder="" />
+                    <div class="modal-input-thumb">
+                        <input name="mail" id="mail" type="email" placeholder=" " />
+                        <svg width="18">
+                            <use href="./images/symbol-defs.svg#email-form"></use>
+                        </svg>
+                    </div>
                     <label for="commentary">Коментар</label>
-                    <textarea name="commentary" type="text" placeholder="Введіть текст" rows="7"></textarea>
+                    <textarea name="commentary" id="commentary" type="text" placeholder="Введіть текст" rows="7"></textarea>
                     <div class="checkbox-thumb">
                         <input type="checkbox" name="deal" id="" value="Погоджуюся з розсилкою та приймаю Умови договору" />
                         <label for="deal">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>   
                     </div>
-                    <button type="submit" class="submit-modal">Відправити</button>
+                    <button type="submit" class="btn-modal">Відправити</button>
                 </form>
             </div>
         </div>
