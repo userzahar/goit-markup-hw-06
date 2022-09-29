@@ -400,32 +400,50 @@
                 </button>
                 <p class="modal-text-invite">Залиште свої дані, ми вам передзвонимо</p>
                 <form action="" class="modal-form">
-                    <label for="nick">Ім'я</label>
+                    
                     <div class="modal-input-thumb">
-                        <input name="nick" id="nick" type="text" placeholder=" " />
-                        <svg width="18">
-                            <use href="./images/symbol-defs.svg#person-form"></use>
-                        </svg>
+                        <label  class="modal-name-span">
+                            <span >Ім'я</span>
+                            <input name="nick" type="text" placeholder=" " />
+                            <svg width="18">
+                                <use href="./images/symbol-defs.svg#person-form"></use>
+                            </svg>
+                        </label>
+
+                        
                     </div>
-                    <label for="tel">Телефон</label>
+                    
                     <div class="modal-input-thumb">
-                        <input name="tel" id="tel" type="tel" placeholder=" " />
-                        <svg width="18">
-                            <use href="./images/symbol-defs.svg#phone-form"></use>
-                        </svg>
+                        <label class="modal-name-span">
+                            <span>Телефон</span>
+                            <input name="tel"  type="tel" placeholder=" " />
+                            <svg width="18">
+                                <use href="./images/symbol-defs.svg#phone-form"></use>
+                            </svg>
+                        </label>
+                        
                     </div>    
-                    <label for="mail">Пошта</label>
+                    
                     <div class="modal-input-thumb">
-                        <input name="mail" id="mail" type="email" placeholder=" " />
-                        <svg width="18">
-                            <use href="./images/symbol-defs.svg#email-form"></use>
-                        </svg>
+                        <label  class="modal-name-span">
+                            <span>Пошта</span>
+                            <input name="mail"  type="email" placeholder=" " />
+                            <svg width="18">
+                                <use href="./images/symbol-defs.svg#email-form"></use>
+                            </svg>
+                        </label>    
+                        
                     </div>
-                    <label for="commentary">Коментар</label>
-                    <textarea name="commentary" id="commentary" type="text" placeholder="Введіть текст" rows="7"></textarea>
+
+                    <label class="modal-name-span">
+                        <span>Коментар</span>
+                        <textarea name="commentary"  type="text" placeholder="Введіть текст" rows="7"></textarea>
+                    </label>
                     <div class="checkbox-thumb">
-                        <input type="checkbox" name="deal" id="" value="Погоджуюся з розсилкою та приймаю Умови договору" />
-                        <label for="deal">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>   
+                        <label>
+                            <input type="checkbox" class="checkbox" name="deal"  value="Погоджуюся з розсилкою та приймаю Умови договору" />
+                            <span class="new-checkbox"></span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                        </label>   
                     </div>
                     <button type="submit" class="btn-modal">Відправити</button>
                 </form>

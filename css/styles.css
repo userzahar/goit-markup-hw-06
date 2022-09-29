@@ -708,10 +708,16 @@ padding: 60px 0 60px;
     display: flex;
     flex-direction: column;
 }
-.modal-form>label {
+.modal-name-span {
+    
+    display: inline-block;
+}
+.modal-name-span span {
+    display: inline-block;
     margin-bottom: 4px;
 }
-.modal-form>textarea {
+
+.modal-form textarea {
     margin-bottom: 20px;
     width: 100%;
     height: 120px;
@@ -720,7 +726,7 @@ padding: 60px 0 60px;
     background-color: transparent;
     padding: 15px 16px;
 }
-.modal-input-thumb input {
+.modal-name-span input {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
@@ -730,12 +736,12 @@ padding: 60px 0 60px;
     padding: 15px 16px 15px 42px;
 }
 /* .modal-input-thumb:focus, */
-.modal-input-thumb>input:focus-within,
-.modal-input-thumb>input:not(:placeholder-shown) {
+.modal-name-span>input:focus-within,
+.modal-name-span>input:not(:placeholder-shown) {
     border-color: var(--accent-color);
 }
-.modal-input-thumb>input:focus-within + svg,
-.modal-input-thumb>input:not(:placeholder-shown) + svg {
+.modal-name-span>input:focus-within + svg,
+.modal-name-span>input:not(:placeholder-shown) + svg {
     fill: var(--accent-color);
 }
 
@@ -768,10 +774,41 @@ padding: 60px 0 60px;
 .modal-input-thumb {
     position: relative;
 }
-.modal-input-thumb>svg {
+.modal-input-thumb svg {
     position: absolute;
     left: 12px;
-    top: -55px;
+    top: -36px;
+}
+.modal-name-span {
+    display: block;}
+.checkbox-thumb a{
+     color:var(--accent-color);
+}
+/* заміняю іконку чекбокса */
+
+.checkbox {
+    appearance: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.new-checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    padding-top: 4px;
+    border: 2px solid var(--contrast-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    
+}
+.checkbox:checked + .new-checkbox {
+    background-image: url(../images/icon-check.svg);
+    background-size: contain ;
+    background-color: var(--accent-color);
+    background-position: center;
+    border-color: var(--accent-color);
+    background-origin: border-box;
+    background-repeat: no-repeat;
 }
 
 
