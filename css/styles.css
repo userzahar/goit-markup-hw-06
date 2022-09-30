@@ -777,6 +777,7 @@ padding: 60px 0 60px;
     position: absolute;
     left: 12px;
     top: -36px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-name-span {
     display: block;}
@@ -811,6 +812,7 @@ padding: 60px 0 60px;
     height: 13px;    
     margin-right: 8px;
     fill: var(--pure-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .new-checkbox {
     background-size: contain ;
