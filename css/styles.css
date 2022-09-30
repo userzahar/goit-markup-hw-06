@@ -769,9 +769,7 @@ padding: 60px 0 60px;
     border-style: none;
 }
 
-.checkbox-thumb {
-    margin-bottom: 30px;
-}
+
 .modal-input-thumb {
     position: relative;
 }
@@ -783,7 +781,7 @@ padding: 60px 0 60px;
 .modal-name-span {
     display: block;}
 .checkbox-thumb a{
-     color:var(--accent-color);
+    color:var(--accent-color);
 }
 /* заміняю іконку чекбокса */
 
@@ -800,25 +798,27 @@ padding: 60px 0 60px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.new-checkbox {
+.checkbox-thumb {
     display: inline-block;
-    width: 15px;
-    height: 16px;
+    margin-bottom: 30px;
     padding-top: 4px;
-    border: 2px solid var(--contrast-color);
-    border-radius: 2px;
-    margin-right: 8px;
     
 }
+.new-checkbox {
+    border: 2px solid var(--contrast-color);
+    border-radius: 2px;
+    width: 14px;
+    height: 13px;    
+    margin-right: 8px;
+    fill: var(--pure-white-color);
+}
 .checkbox:checked + .new-checkbox {
-    background-image: url(../images/icon-check.svg);
     background-size: contain ;
     background-color: var(--accent-color);
     background-position: center;
     border-color: var(--accent-color);
     background-origin: border-box;
     background-repeat: no-repeat;
-    
 }
 
 

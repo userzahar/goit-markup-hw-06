@@ -379,8 +379,9 @@
                 <div class="miniform">
                     <p class="invite-text">Підпишіться на розсилку</p>
                     <form class="footer-miniform">
-
-                        <input type="email" name="mail" class="mail-form" placeholder="E-mail" />
+                        <label>
+                            <input type="email" name="miniform-mail" class="mail-form" placeholder="E-mail" />
+                        </label>
                         <div class="btn-footer-thumb">
                             <button type="submit" class="footer-button">Підписатися</button>
                             <svg class="footer-btn-icon">
@@ -404,7 +405,7 @@
                     <div class="modal-input-thumb">
                         <label  class="modal-name-span">
                             <span >Ім'я</span>
-                            <input name="nick" type="text" placeholder=" " />
+                            <input name="nickname" type="text" placeholder=" " />
                             <svg width="18">
                                 <use href="./images/symbol-defs.svg#person-form"></use>
                             </svg>
@@ -437,12 +438,12 @@
 
                     <label class="modal-name-span">
                         <span>Коментар</span>
-                        <textarea name="commentary"   type="text" placeholder="Введіть текст" rows="7"></textarea>
+                        <textarea name="commentary"   type="text" placeholder="Введіть текст" rows="7" maxlength="255"></textarea>
                     </label>
                     <div class="checkbox-thumb">
                         <label>
                             <input type="checkbox" class="checkbox" name="deal"  value="Погоджуюся з розсилкою та приймаю Умови договору" />
-                            <span class="new-checkbox"></span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                            <svg class="new-checkbox"><use href="./images/symbol-defs.svg#icon-check"></use></svg>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
                         </label>   
                     </div>
                     <button type="submit" class="btn-modal">Відправити</button>
