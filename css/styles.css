@@ -38,10 +38,10 @@ body {
 .link {
     text-decoration: none;
 }
-.link.current {color:var(--accent-color);}
-.current {
-
+.nav-items>.link.current {
+    color:var(--accent-color);
 }
+
 html {box-sizing: border-box;}
 .visually-hidden {
     position: absolute;
@@ -622,7 +622,6 @@ padding: 60px 0 60px;
     position: absolute;
     width: 18px;
     height: 18px;
-    stroke: var(--pure-black-color);
     display: block;
     color: var(--pure-black-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -643,12 +642,13 @@ padding: 60px 0 60px;
 
 /* форми -------------------- */
 .miniform {
-    margin-left:93px ;
+    margin-left:auto ;
 }
 .mail-form {
     width: 358px;
     height: 50px;
     border-radius: 4px;
+    color: var(--pure-white-color);
     background-color: transparent;
     border: 1px solid var(--footer-icon-color);
     padding: 15px 16px;
@@ -716,6 +716,7 @@ padding: 60px 0 60px;
 }
 
 .modal-name-span textarea {
+    display: block;
     margin-bottom: 20px;
     width: 100%;
     height: 120px;
@@ -783,8 +784,15 @@ padding: 60px 0 60px;
 .modal-name-span {
     position: relative;
     display: block;}
-.checkbox-thumb a{
+
+.checkbox-label a{
     color:var(--accent-color);
+}
+.checkbox-label {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    
 }
 /* заміняю іконку чекбокса */
 
@@ -801,17 +809,12 @@ padding: 60px 0 60px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.checkbox-thumb {
-    display: inline-block;
-    margin-bottom: 30px;
-    padding-top: 4px;
-    
-}
+
 .new-checkbox {
     border: 2px solid var(--contrast-color);
     border-radius: 2px;
-    width: 14px;
-    height: 13px;    
+    width: 15px;
+    height: 14px;    
     margin-right: 8px;
     fill: var(--pure-white-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
